@@ -1,3 +1,18 @@
 h1, h2 {
   font-family: Lato;
 }
+
+.top-box {
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 8em;
+  margin-bottom: 1em;
+  padding-top: 4em;
+  padding-left: 2em;
+}
+
+.bottom-box{
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 16em;
+}
