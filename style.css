@@ -16,3 +16,11 @@ h1, h2 {
   border-radius: 10px;
   height: 16em;
 }
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0.5em;
+}

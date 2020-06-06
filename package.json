@@ -2,5 +2,7 @@
   "name": "js-emjkdd",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "fontawesome": "^5.6.3"
+  }
 }
