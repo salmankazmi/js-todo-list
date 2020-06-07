@@ -12,6 +12,7 @@ function main() {
   addButton.addEventListener("click", () => {
     const task = taskInput.value;
     addTask(task);
+    taskInput.value = '';
   });
 }
 
@@ -19,7 +20,7 @@ function addTask(task) {
   if (task && String(task).trim().length > 0) {
     if (previousValue !== task) {
       const taskObj = {
-        id: 1,
+        id: Math.random(),
         value: task,
         createdOn: new Date()
       };
@@ -34,6 +35,7 @@ function renderTasks(task) {
   const taskList = document.querySelector("ul");
   const newTask = document.createElement("li");
   const taskTextBox = document.createElement("input");
+  taskTextBox.setAttribute("type", "text");
   const removeTaskIcon = document.createElement("span");
   removeTaskIcon.innerHTML = `
         <i class="far fa-trash-alt"></i>
@@ -47,7 +49,6 @@ function renderTasks(task) {
 }
 
 const deleteTask = id => {
-  debugger;
   let taskIndex = 0;
   for (const task of tasks) {
     if (task.id == id) {
